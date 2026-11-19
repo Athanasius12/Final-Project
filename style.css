@@ -77,7 +77,6 @@ section p {
   font-size: 17px;
 }
 
-/* Gold Decorative Lines */
 
 section h2::after {
   
@@ -137,7 +136,9 @@ footer {
 
 .offers-grid {
   display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 25px;
+  align-items: stretch;
 }
 
 .offer-card {
@@ -146,12 +147,15 @@ footer {
   border-radius: 10px;
   padding: 18px;
   text-align: center;
+  min-width: 0;
 }
 
 .offer-card img {
+  display: block;
   width: 100%;
   height: 280px;
   object-fit: cover;
+  object-position: center;
   border: 1px solid #D4AF37;
   border-radius: 7px;
 }
@@ -167,8 +171,8 @@ footer {
 }
 
 .old-price {
- 
   color: #B9A9A0;
+  text-decoration: line-through;
   margin-top: 15px;
 }
 
@@ -181,21 +185,41 @@ footer {
 /* Welcome Background */
 
 section.welcome-section {
-  background-image: url("images/Welcome.png");
+  width: 100vw;
+  min-height: 550px;
+
+  margin-left: calc(50% - 50vw);
+  margin-bottom: 30px;
+  padding: 30px;
+
+  background-image: url("images/Welcome\ \(2\).png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   border: none;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 
-section.welcome-section h2,
 section.welcome-section p {
   color: white;
+  font-size: 150%;
+ 
+
+}
+section.welcome-section h2{
+  color: white;
+  font-size: 300%;
+  border-bottom: #D4AF37 solid 0.3rem ;
+  padding-bottom: 1rem;
+  
 }
 
 /* Logo and Restaurant Name */
@@ -221,3 +245,15 @@ section.welcome-section p {
   text-align: center;
 }
 
+/* Homepage Section Links */
+
+.home-section-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.home-section-link:hover section {
+  border-color: #F0442E;
+  
+}
