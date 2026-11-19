@@ -1,0 +1,223 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #300910;
+  color: #D6B66A;
+  margin: 0;
+  
+}
+
+/* Header */
+
+header {
+  background-color: #22060B;
+  padding: 25px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 2px solid #D4AF37;
+}
+
+header h1 {
+  color: #F0442E;
+  font-family: Georgia, serif;
+  font-size: 36px;
+  margin: 0;
+}
+
+/* Navigation */
+
+nav {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #D4AF37;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 8px 4px;
+}
+
+nav a:hover {
+  color: #F0442E;
+}
+
+/* Main Content */
+
+main {
+  max-width: 1150px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* Sections */
+
+section {
+  background-color: #461019;
+  padding: 45px 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  border: 1px solid #D4AF37;
+  border-radius: 8px;
+}
+
+section h2 {
+  color: #D4AF37;
+  font-family: Georgia, serif;
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+section p {
+  color: #E5CC91;
+  font-size: 17px;
+}
+
+/* Gold Decorative Lines */
+
+section h2::after {
+  
+  display: block;
+  width: 90px;
+  height: 2px;
+  background-color: #D4AF37;
+  margin: 15px auto;
+}
+
+/* Footer */
+
+footer {
+  background-color: #22060B;
+  color: #D4AF37;
+  text-align: center;
+  padding: 25px;
+  border-top: 2px solid #D4AF37;
+}
+
+/* Menu Gallery */
+
+.menu-intro {
+  background-color: #461019;
+  border: 1px solid #D4AF37;
+}
+
+.menu-intro h2 {
+  color: #D4AF37;
+}
+
+.menu-gallery {
+  display: grid;
+  gap: 25px;
+}
+
+.menu-image {
+  background-color: #22060B;
+  border: 3px solid #D4AF37;
+  border-radius: 12px;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.menu-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* Special Offers Page */
+
+.offers-intro h2 {
+  color: #D4AF37;
+}
+
+.offers-grid {
+  display: grid;
+  gap: 25px;
+}
+
+.offer-card {
+  background-color: #300910;
+  border: 2px solid #D4AF37;
+  border-radius: 10px;
+  padding: 18px;
+  text-align: center;
+}
+
+.offer-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border: 1px solid #D4AF37;
+  border-radius: 7px;
+}
+
+.offer-card h2 {
+  color: #D4AF37;
+  font-size: 23px;
+  margin: 15px 0;
+}
+
+.offer-card p {
+  color: #E5CC91;
+}
+
+.old-price {
+ 
+  color: #B9A9A0;
+  margin-top: 15px;
+}
+
+.new-price {
+  color: #F0442E !important;
+  font-size: 21px;
+  font-weight: bold;
+}
+
+/* Welcome Background */
+
+section.welcome-section {
+  background-image: url("images/Welcome.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+
+section.welcome-section h2,
+section.welcome-section p {
+  color: white;
+}
+
+/* Logo and Restaurant Name */
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.logo img {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+  display: block;
+}
+
+.brand h1 {
+  color: #F0442E;
+  font-size: 28px;
+  margin: 0;
+  text-align: center;
+}
+
