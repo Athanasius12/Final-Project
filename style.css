@@ -277,3 +277,37 @@ section.welcome-section h2{
   border-color: #F0442E;
   
 }
+
+.learn-more-button {
+  display: inline-block;
+  background-color: #d64b36;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 12px 25px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.learn-more-button:hover {
+  background-color: #a83325;
+}
+
+
+
+/* Homepage Special Offers - Four Cards in One Row */
+
+.home-offers-section .offers-grid {
+  grid-template-columns: repeat(4, minmax(0, 20rem));
+  gap: 18px;
+  align-items: stretch;
+}
+
+.home-offers-section .offer-card {
+  height: 100%;
+}
+
+.home-offers-section .offer-card img {
+  height: 240px;
+}
+
